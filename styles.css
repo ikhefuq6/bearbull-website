@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.main-content {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #f7a900;
+    color: black;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #e69400;
+}
+
+.image-section {
+    margin-top: 40px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
