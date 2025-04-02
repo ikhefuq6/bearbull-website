@@ -1,13 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 header {
@@ -16,15 +19,22 @@ header {
 
 .logo img {
     width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
 
 .main-content {
     margin-top: 50px;
+    padding: 20px;
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    color: #f7a900;
 }
 
 p {
@@ -36,13 +46,32 @@ p {
     background-color: #f7a900;
     color: black;
     font-size: 1.2em;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
     background-color: #e69400;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-link {
+    margin: 0 15px;
+}
+
+.social-link img {
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
 }
 
 .image-section {
@@ -52,4 +81,15 @@ p {
 .image-section img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        font-size: 1.2em;
+    }
+    h1 {
+        font-size: 2em;
+    }
 }
