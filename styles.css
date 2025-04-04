@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #111;
@@ -63,14 +64,25 @@ p {
 
 .social-link {
     margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 .social-link img {
     width: 50px;
-    transition: transform 0.3s ease;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.social-link img:hover {
+.social-link.twitter img {
+    background-color: #1DA1F2;
+}
+
+.social-link.telegram img {
+    background-color: #0088cc;
+}
+
+.social-link:hover {
     transform: scale(1.2);
 }
 
