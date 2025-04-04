@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/A_promotional_digital_graphic_design_for_BEARBULL.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.headline {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.intro-text {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF6600;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #FF9933;
+}
+
+.image-section {
+    margin-top: 40px;
+}
+
+.crypto-chart {
+    margin-top: 40px;
+}
