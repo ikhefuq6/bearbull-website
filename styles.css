@@ -1,106 +1,95 @@
-
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background: #0b0c10;
-    color: white;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
 header {
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .logo img {
     width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.main-content {
+    margin-top: 50px;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 3rem;
-    color: #ff5733;
-    margin: 20px 0;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f7a900;
 }
 
 p {
-    font-size: 1.2rem;
-    color: #f4f4f4;
-    max-width: 800px;
-    margin: 0 auto 30px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .cta-button {
-    background: #ff5733;
-    border: none;
+    background-color: #f7a900;
+    color: black;
+    font-size: 1.2em;
     padding: 15px 30px;
-    font-size: 1.1rem;
-    color: white;
+    border: none;
     cursor: pointer;
     border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.cta-button a {
-    color: white;
-    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background: #c13f00;
+    background-color: #e69400;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-link {
+    margin: 0 15px;
+}
+
+.social-link img {
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.2);
 }
 
 .image-section {
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 .image-section img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-footer {
-    margin-top: 50px;
-}
-
-.social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.social-button {
-    background: #1b1b1b;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #ff5733;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid transparent;
-    transition: background 0.3s, border-color 0.3s;
-}
-
-.social-button:hover {
-    background: #ff5733;
-    border-color: #ff5733;
-    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+    .main-content {
+        font-size: 1.2em;
     }
-
-    p {
-        font-size: 1rem;
+    h1 {
+        font-size: 2em;
     }
 }
